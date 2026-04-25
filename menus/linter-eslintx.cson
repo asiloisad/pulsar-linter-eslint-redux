@@ -3,10 +3,10 @@
     label: 'Packages'
     submenu: [
       {
-        label: 'Linter ESLintX'
+        label: 'Linter eslint-redux'
         submenu: [
-          { label: 'Reload', command: 'linter-eslintx:reload' }
-          { label: 'Lint Project', command: 'linter-eslintx:lint-project' }
+          { label: 'Reload', command: 'linter-eslint-redux:reload' }
+          { label: 'Lint Project', command: 'linter-eslint-redux:lint-project' }
         ]
       }
     ]

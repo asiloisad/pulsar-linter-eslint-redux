@@ -1,4 +1,4 @@
-# linter-eslintx
+# linter-eslint-redux
 
 ESLint linter provider with bundled v8 and v9 support. Uses project-installed ESLint when available, falls back to bundled version.
 
@@ -14,7 +14,7 @@ ESLint linter provider with bundled v8 and v9 support. Uses project-installed ES
 
 ## Installation
 
-To install `linter-eslintx` search for [linter-eslintx](https://web.pulsar-edit.dev/packages/linter-eslintx) in the Install pane of the Pulsar settings or run `ppm install linter-eslintx`. Alternatively, you can run `ppm install asiloisad/pulsar-linter-eslintx` to install a package directly from the GitHub repository.
+To install `linter-eslint-redux` search for [linter-eslint-redux](https://web.pulsar-edit.dev/packages/linter-eslint-redux) in the Install pane of the Pulsar settings or run `ppm install linter-eslint-redux`. Alternatively, you can run `ppm install asiloisad/pulsar-linter-eslint-redux` to install a package directly from the GitHub repository.
 
 ## Plugins
 
@@ -32,14 +32,14 @@ The bundled ESLint is minimal and intended for basic linting only (no plugins).
 2. **Bundled fallback**: If no project ESLint found, tries bundled v8, then v9.
 3. **Silent skip**: If no ESLint config found (tried both versions), silently skips the project.
 
-**Caching:** ESLint resolution and config detection happen on first lint and are cached per project. Use `linter-eslintx:reload` to clear the cache and re-detect (e.g., after installing ESLint or adding a config file).
+**Caching:** ESLint resolution and config detection happen on first lint and are cached per project. Use `linter-eslint-redux:reload` to clear the cache and re-detect (e.g., after installing ESLint or adding a config file).
 
 ## Commands
 
 Commands available in `atom-workspace`:
 
-- `linter-eslintx:reload`: reset the ESLint engine cache and re-detect,
-- `linter-eslintx:lint-project`: lint all files in the project.
+- `linter-eslint-redux:reload`: reset the ESLint engine cache and re-detect,
+- `linter-eslint-redux:lint-project`: lint all files in the project.
 
 ## Troubleshooting
 
@@ -47,21 +47,21 @@ Enable **Debug Mode** in settings and open the developer console (View → Devel
 
 **Project ESLint found:**
 ```
-[linter-eslintx] Project: C:\projects\my-app
-[linter-eslintx] Project ESLint found: v9.0.0
-[linter-eslintx] Path: C:\projects\my-app\node_modules\eslint
+[linter-eslint-redux] Project: C:\projects\my-app
+[linter-eslint-redux] Project ESLint found: v9.0.0
+[linter-eslint-redux] Path: C:\projects\my-app\node_modules\eslint
 ```
 
 **Using bundled ESLint:**
 ```
-[linter-eslintx] Project: C:\projects\my-app
-[linter-eslintx] Project ESLint not found: No eslint in project node_modules
-[linter-eslintx] Using bundled ESLint: bundled-v8, v8.57.1
+[linter-eslint-redux] Project: C:\projects\my-app
+[linter-eslint-redux] Project ESLint not found: No eslint in project node_modules
+[linter-eslint-redux] Using bundled ESLint: bundled-v8, v8.57.1
 ```
 
 **No config found:**
 ```
-[linter-eslintx] No ESLint config found (tried both v8 and v9), skipping project
+[linter-eslint-redux] No ESLint config found (tried both v8 and v9), skipping project
 ```
 
 ## Example Configs

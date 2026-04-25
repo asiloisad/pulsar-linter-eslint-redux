@@ -19,13 +19,13 @@
   ],
   "activationCommands": {
     "atom-workspace": [
-      "linter-eslintx:reload",
-      "linter-eslintx:lint-project"
+      "linter-eslint-redux:reload",
+      "linter-eslint-redux:lint-project"
     ]
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/asiloisad/pulsar-linter-eslintx.git"
+    "url": "https://github.com/asiloisad/pulsar-linter-eslint-redux.git"
   },
   "configSchema": {
     "useBuiltin": {
