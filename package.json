@@ -1,5 +1,5 @@
 {
-  "name": "linter-eslintx",
+  "name": "linter-eslint-redux",
   "version": "0.2.2",
   "license": "MIT",
   "description": "ESLint linter provider with bundled v8 and v9 support",
