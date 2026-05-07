@@ -39,7 +39,7 @@ The bundled ESLint is minimal and intended for basic linting only (no plugins).
 Commands available in `atom-workspace`:
 
 - `linter-eslint-redux:reload`: reset the ESLint engine cache and re-detect,
-- `linter-eslint-redux:lint-project`: lint all files in the project.
+- `linter-eslint-redux:lint-projects`: lint all files in the project.
 
 ## Troubleshooting
 

@@ -20,7 +20,8 @@
   "activationCommands": {
     "atom-workspace": [
       "linter-eslint-redux:reload",
-      "linter-eslint-redux:lint-project"
+      "linter-eslint-redux:lint-projects",
+      "linter-eslint-redux:lint-selected"
     ]
   },
   "repository": {
@@ -64,6 +65,11 @@
     "atom-ide-busy-signal": {
       "versions": {
         "0.1.0": "consumeBusySignal"
+      }
+    },
+    "tree-view": {
+      "versions": {
+        "^1.0.0": "consumeTreeView"
       }
     }
   },

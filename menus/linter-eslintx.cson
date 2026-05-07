@@ -6,7 +6,8 @@
         label: 'Linter eslint-redux'
         submenu: [
           { label: 'Reload', command: 'linter-eslint-redux:reload' }
-          { label: 'Lint Project', command: 'linter-eslint-redux:lint-project' }
+          { label: 'Lint Projects', command: 'linter-eslint-redux:lint-projects' }
+          { label: 'Lint Selected', command: 'linter-eslint-redux:lint-selected' }
         ]
       }
     ]
