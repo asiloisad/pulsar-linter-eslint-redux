@@ -2,7 +2,7 @@
   "name": "linter-eslint-redux",
   "version": "0.3.0",
   "license": "MIT",
-  "description": "ESLint linter provider with bundled v8 and v9 support",
+  "description": "ESLint linter provider with bundled v8 and v10 support",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
@@ -30,7 +30,7 @@
   "configSchema": {
     "useBuiltin": {
       "title": "Use Bundled ESLint",
-      "description": "Use bundled ESLint when project doesn't have ESLint installed. Auto-detects v8 or v9 based on config format.",
+      "description": "Use bundled ESLint when project doesn't have ESLint installed. Auto-detects v8 or v10 based on config format.",
       "type": "boolean",
       "default": true,
       "order": 1
@@ -52,7 +52,7 @@
   },
   "dependencies": {
     "eslint8": "npm:eslint@^8.57.0",
-    "eslint9": "npm:eslint@^9.0.0"
+    "eslint10": "npm:eslint@^10.0.0"
   },
   "consumedServices": {
     "linter-indie": {

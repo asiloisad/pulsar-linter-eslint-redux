@@ -1,11 +1,11 @@
 # linter-eslint-redux
 
-ESLint linter provider with bundled v8 and v9 support. Uses project-installed ESLint when available, falls back to bundled version.
+ESLint linter provider with bundled v8 and v10 support. Uses project-installed ESLint when available, falls back to bundled version.
 
 ## Features
 
 - **Project ESLint first**: uses ESLint from your project's `node_modules` if installed.
-- **Bundled fallback**: includes ESLint v8 and v9, no global install needed.
+- **Bundled fallback**: includes ESLint v8 and v10, no global install needed.
 - **Multi-project support**: each project in workspace uses its own ESLint independently.
 - **Silent mode**: if no ESLint config is found, the package silently does nothing.
 - **Ignore support**: respects `.eslintignore` files.
@@ -29,7 +29,7 @@ The bundled ESLint is minimal and intended for basic linting only (no plugins).
 ## How It Works
 
 1. **Project ESLint**: First checks for ESLint in your project's `node_modules/eslint`.
-2. **Bundled fallback**: If no project ESLint found, tries bundled v8, then v9.
+2. **Bundled fallback**: If no project ESLint found, tries bundled v8, then v10.
 3. **Silent skip**: If no ESLint config found (tried both versions), silently skips the project.
 
 **Caching:** ESLint resolution and config detection happen on first lint and are cached per project. Use `linter-eslint-redux:reload` to clear the cache and re-detect (e.g., after installing ESLint or adding a config file).
@@ -48,7 +48,7 @@ Enable **Debug Mode** in settings and open the developer console (View → Devel
 **Project ESLint found:**
 ```
 [linter-eslint-redux] Project: C:\projects\my-app
-[linter-eslint-redux] Project ESLint found: v9.0.0
+[linter-eslint-redux] Project ESLint found: v10.0.0
 [linter-eslint-redux] Path: C:\projects\my-app\node_modules\eslint
 ```
 
@@ -61,7 +61,7 @@ Enable **Debug Mode** in settings and open the developer console (View → Devel
 
 **No config found:**
 ```
-[linter-eslint-redux] No ESLint config found (tried both v8 and v9), skipping project
+[linter-eslint-redux] No ESLint config found (tried both v8 and v10), skipping project
 ```
 
 ## Example Configs
@@ -76,7 +76,7 @@ module.exports = {
 };
 ```
 
-**ESLint v9** (`eslint.config.js`):
+**ESLint v10** (`eslint.config.js`):
 ```js
 const js = require("@eslint/js");
 
