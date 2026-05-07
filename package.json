@@ -52,7 +52,8 @@
   },
   "dependencies": {
     "eslint8": "npm:eslint@^8.57.0",
-    "eslint10": "npm:eslint@^10.0.0"
+    "eslint10": "npm:eslint@^10.0.0",
+    "minimatch": "^10.2.5"
   },
   "consumedServices": {
     "linter-indie": {
