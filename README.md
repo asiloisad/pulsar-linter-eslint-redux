@@ -46,6 +46,7 @@ Commands available in `atom-workspace`:
 Enable **Debug Mode** in settings and open the developer console (View → Developer → Toggle Developer Tools).
 
 **Project ESLint found:**
+
 ```
 [linter-eslint-redux] Project: C:\projects\my-app
 [linter-eslint-redux] Project ESLint found: v10.0.0
@@ -53,6 +54,7 @@ Enable **Debug Mode** in settings and open the developer console (View → Devel
 ```
 
 **Using bundled ESLint:**
+
 ```
 [linter-eslint-redux] Project: C:\projects\my-app
 [linter-eslint-redux] Project ESLint not found: No eslint in project node_modules
@@ -60,6 +62,7 @@ Enable **Debug Mode** in settings and open the developer console (View → Devel
 ```
 
 **No config found:**
+
 ```
 [linter-eslint-redux] No ESLint config found (tried both v8 and v10), skipping project
 ```
@@ -67,6 +70,7 @@ Enable **Debug Mode** in settings and open the developer console (View → Devel
 ## Example Configs
 
 **ESLint v8** (`.eslintrc.js`):
+
 ```ka
 module.exports = {
   env: { browser: true, es2021: true, node: true },
@@ -77,6 +81,7 @@ module.exports = {
 ```
 
 **ESLint v10** (`eslint.config.js`):
+
 ```js
 const js = require("@eslint/js");
 
